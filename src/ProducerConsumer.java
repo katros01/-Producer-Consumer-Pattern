@@ -32,8 +32,8 @@ public class ProducerConsumer {
                 }
                 int value = buffer.remove(0);
                 System.out.println("Consumed: " + value);
-                notify(); // Notify producer to produce
-                Thread.sleep(1000); // Simulate time delay
+                notify();
+                Thread.sleep(1000);
             }
         }
     }
